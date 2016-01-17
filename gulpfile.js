@@ -11,10 +11,11 @@ var plumber = require( 'gulp-plumber' );
 var livereload = require( 'gulp-livereload' );
 var babel = require( 'gulp-babel' );
 var jade = require( 'gulp-jade' );
+var del = require('del');
 
 // Basic
 // =====
-gulp.task( 'default', [ 'jade', 'less', 'js', 'copy' ] );
+gulp.task( 'default', [ 'clean', 'jade', 'less', 'js', 'copy' ] );
 
 // gulp.task( 'watch', function () {
 //     livereload.listen();
@@ -27,6 +28,10 @@ gulp.task( 'default', [ 'jade', 'less', 'js', 'copy' ] );
 
 // Tasks
 // =====
+gulp.task( 'clean', function () {
+    return del( 'build/**/*', '!build/.gitkeep' );
+});
+
 
 gulp.task( 'jade', function () {
     return gulp.src( './jade/*.jade' )
