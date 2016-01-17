@@ -1,0 +1,63 @@
+html, body { font-family: 'Futura W03', Futura, 'Trebuchet MS', Arial, sans-serif;
+             color: @black;
+             background-color: @white;
+             font-weight: 700;
+             font-size: 36px;
+             text-transform: uppercase;
+             line-height: 36px; }
+
+a { text-decoration: none; }
+
+p, ul, h1, h2 { padding-bottom: 36px; }
+
+@media (max-width: 840px ) {
+    body { padding: 20px 20px 20px 20px; }
+    .skills li { display: inline-block; margin-left: 5px; }
+    .column { display: inline-block; vertical-align: top; margin-right: 20px; }
+    .columns { padding-bottom: 36px; }
+    h1 { padding-bottom: 0 }
+    h2 { color: #3076BB; }
+}
+
+@media (min-width: 841px) {
+    @primary: 24px;
+    @secondary: 256px;
+    @third: 510px;
+    h1 { position: fixed; top: 24px; left: @primary; }
+    h2 { position: fixed; top: 60px; left: @secondary; }
+    .projects { margin-top: 132px; margin-left: @third; }
+    .columns { margin-left: @third; }
+    .column { display: inline-block; width: 200px; vertical-align: top; }
+    .column-a { padding-right: 20px; }
+    .column-b { width: 160px; }
+    .column-c { width: 180px; }
+    .skills { position: fixed; top: 800px; left: @secondary; }
+    .quote { margin-left: @third; }
+    .logos { padding-top: 200px; padding-bottom: 300px; }
+    .above-text { position: relative; }
+    .projects { padding-right: 20px; }
+}
+    
+
+// Typograhy
+// =========
+
+a, a:visited { color: @black;
+               background-image: url( underline-green.png );
+               background-position-y: 36px;
+               background-repeat: repeat-x; }
+
+a:hover { background-image: url( underline-blue.png ); }
+
+.column p { padding-bottom: 21px; padding-bottom: 16px;  }
+.column h3, .column p { font-weight: 400; font-size: 16px; line-height: 21px; text-transform: none; }
+.column a, .column a:visited { background-image: url( underline-orange.png ); background-position-y: 16px }
+.column a.ross, .column a.ross:visited { background-image: url( underline-blue.png ); }
+.column a.tommaso, .column a.tommaso:visited { background-image: url( underline-pink.png ); }
+
+
+
+// Logos
+// =====
+.logos img { width: 100%; }
+

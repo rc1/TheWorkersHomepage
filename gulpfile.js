@@ -11,20 +11,22 @@ var plumber = require( 'gulp-plumber' );
 var livereload = require( 'gulp-livereload' );
 var babel = require( 'gulp-babel' );
 var jade = require( 'gulp-jade' );
-var del = require('del');
+var del = require( 'del' );
+var serve = require( 'gulp-serve' );
 
 // Basic
 // =====
 gulp.task( 'default', [ 'clean', 'jade', 'less', 'js', 'copy' ] );
 
-// gulp.task( 'watch', function () {
-//     livereload.listen();
-//     gulp.watch( './assets/**/*.less', [ 'less' ] );
-//     gulp.watch( './assets/js/**/*.js', [ 'js' ] );
-//     gulp.watch( './assets/js-libs/**/*.js', [ 'js' ] );
-//     gulp.watch( './**/*.jade', [ 'jade' ] );
-//     gulp.watch( './assets/copy/**/*', [ 'copy' ] );
-// });
+gulp.task( 'watch', function () {
+    livereload.listen();
+    gulp.watch( './less/**/*.less', [ 'less' ] );
+    gulp.watch( './jade/**/*.jade', [ 'jade' ] );
+    gulp.watch( './js/**/*.js', [ 'js' ] );
+    gulp.watch( './copy/**/*.js', [ 'copy' ] );
+});
+
+gulp.task( 'serve', serve( './build' ) );
 
 // Tasks
 // =====

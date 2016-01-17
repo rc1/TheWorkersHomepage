@@ -2,87 +2,136 @@ doctype html
 html
     head
         title The Workers
-        link( rel='stylesheet', type='text/css', href='/homepage.css' )
+        link( rel='stylesheet', type='text/css', href='http://fast.fonts.net/cssapi/8e109d65-ebeb-46d7-b7d8-27241cef6e00.css' )
+        link( rel='stylesheet', type='text/css', href='homepage.css' )
+        
+        meta(http-equiv='imagetoolbar', content='no')
+        meta(name='description', content='Seriously playful, sometimes digital, design studio.')
+        meta(name='keywords', content='design, web, iOS, product, studio, RCA, royal college of art, art, designers, the best, better the the rest, gods, advertising, publishing, ebooks, iphone, ipad, mobile, graphic design')
+        meta(name='author', content='Ross Cairns')
+   
+    //- Piwik
+    script(type='text/javascript').
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+          var u="//stats.theworkers.net/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', 2]);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+    noscript
+        p
+            img(src='//stats.theworkers.net/piwik.php?idsite=1', style='border:0;', alt='')
+
     body
-        #header
-            h1 The Workers
-            h2 Seriously Playful, Sometimes Digital, Design Studio
-            ul.skills
-                li: a( href='' ) Design,
-                li: a( href='' ) Collaboration,
-                li: a( href='' ) UX & IA,
-                li: a( href='' ) Web Development,
-                li: a( href='' ) Unity, 
-                li: a( href='' ) Openframeworks,
-                li: a( href='' ) Animation, 
-                li: a( href='' ) Events, 
-                li: a( href='' ) Video,
-                li: a( href='' ) Live Streaming, 
-                li: a( href='' ) 3D Modelling,
-                li: a( href='' ) Rendering,
-                li: a( href='' ) Prototyping, 
-                li: a( href='' ) Mobile,
-                li: a( href='' ) App Development,
-                li: a( href='' ) Installations,
-                li: a( href='' ) Performances,
-                li: a( href='' ) Speaking,
-                li: a( href='' ) Technology,
-                li: a( href='' ) WebGL,
-                li: a( href='' ) Three.js
-        #content
-            ul.projects
-                li: a( href='' ) Afterdark
-                li: a( href='' ) Where-you-are
-                li: a( href='' ) HTC Straylight
-                li: a( href='' ) Bloomberg Connects
-                li: a( href='' ) Awesomecross
-                li: a( href='' ) Map Project Office
-                li: a( href='' ) Studio Blackburn
-                li: a( href='' ) /o/o/o/o/
-                li: a( href='' ) Seset & Allude
-            .columns
-                .column.column-a 
-                    p The Workers (London) Ltd.
-                        br
-                        | 32 Sunbury Workshops,
-                        br
-                        | Swanfield Street
-                        br
-                        | London E2 7LF
-                        br 
-                        a( href='map' )
-                .column.column-b 
-                    h3 Contact
-                    p io@theworkers.net
-                    h3 Ross Cairns
-                    p: a( href='mailto:r@theworkers.net' ) r@theworkers.net
-                        br
-                        | +(44) 77 512 44 728
-                    h3
-                    p Tommaso Lanza
-                    p: a href='mailto:t@theworkers.net' ) t@theworkers.net
-                        br 
-                        | +(44) 77 512 44 728
-                .column.column-c
-                    p Twitter: 
-                       a( href='http://twitter.com/theworkers' )
-                    p Company No. 7512173
-            .logos
-                .logo: img( src="logo-blue.png" )
-                .logo: img( src="logo-green.png" )
-                .logo: img( src="logo-pink.png" )
-                .logo: img( src="logo-blue.png" )
-                .logo: img( src="logo-green.png" )
-                .logo: img( src="logo-pink.png" )
-            p At
-                br
-                | the intersection
-                br
-                | of physical and digital
-                br
-                | The Workers went up
-
-
+        h1 The 
+            br 
+            | Workers
+        h2 Seriously 
+            br.show-on.wide-block.fat-block 
+            |  Playful,  
+            br 
+            | Sometimes  
+            br.show-on.wide-block.fat-block  
+            | Digital,  
+            br
+            | Design  
+            br.show-on.wide-block.fat-block  
+            | Studio
+        ul.projects
+            li: a( href='http://www.afterdark.io/' ) Afterdark
+            li: a( href='http://where-you-are.com/' ) Where-you-are
+            li: a( href='https://vimeo.com/137878124' ) HTC Straylight
+            li: a( href='https://vimeo.com/136113812' ) Bloomberg Connects
+            li: a( href='https://www.youtube.com/watch?v=eXHPlmRWj5I' ) Awesomecross
+            li: a( href='http://studioblackburn.com/' ) Studio Blackburn
+            li: a( href='http://mapprojectoffice.theworkers.net/' ) Map Project Office
+            li: a( href='http://www.o-o-o-o.co.uk/' ) /o/o/o/o/
+            li
+                a( href='https://vimeo.com/139347601' ) Reset
+                |  & 
+                a( href='https://vimeo.com/126490585' ) Allude
+        .columns
+            .column.column-a 
+                p The Workers (London) Ltd.
+                    br
+                    | 32 Sunbury Workshops,
+                    br
+                    | Swanfield Street
+                    br
+                    | London E2 7LF
+                    br 
+                    a( href='https://www.google.co.uk/maps/dir/\'\'/the+workers+london/data=!4m5!4m4!1m0!1m2!1m1!1s0x48761cb9c760956d:0x93f6beba60529f84?sa=X&ved=0ahUKEwi0goHs1rHKAhUBNhQKHZvdC6EQ9RcIdjAL' ) Map
+            .column.column-b 
+                h3 Contact
+                p: a( href='mailto:io@theworkers.net' ) io@theworkers.net
+                h3 Twitter
+                p: a( href='http://twitter.com/theworkers' ) @theworkers
+                h3 Company No.
+                p 7512173
+            .column.column-c
+                h3: a.ross( href='http://rosscairns.com' ) Ross Cairns
+                p 
+                    a.ross( href='mailto:r@theworkers.net' ) r@theworkers.net
+                    br
+                    | +(44) 77 512 44 728
+                h3: a.tommaso( href='http://tommasolanza.com' ) Tommaso Lanza
+                p  
+                    a.tommaso( href='mailto:t@theworkers.net' ) t@theworkers.net
+                    br 
+                    | +(44) 77 216 92 021
+        ul.skills
+            li Design,
+            li Collaboration,
+            li Interaction,
+            li User Experience,
+            li Web Development,
+            li Unity, 
+            li Openframeworks,
+            li Animation, 
+            li Events, 
+            li Video,
+            li Live Streaming, 
+            li 3D Modelling,
+            li Rendering,
+            li Prototyping, 
+            li Mobile,
+            li App Development,
+            li Installations,
+            li Performances,
+            li Speaking,
+            li Technology,
+            li WebGL,
+            li Three.js,
+            li Games
+        .logos
+            .logo: img( src="logo-blue.png" )
+            .logo.show-on.fat-block.wide-block: img( src="logo-green.png" ).above-text
+            .logo.show-on.fat-block.wide-block: img( src="logo-pink.png" )
+            .logo.show-on.fat-block.wide-block: img( src="logo-blue.png" ).above-text
+            .logo.show-on.fat-block.wide-block: img( src="logo-green.png" )
+            .logo.show-on.fat-block.wide-block: img( src="logo-pink.png" ).above-text
+        p.quote At
+            br
+            | the intersection
+            br
+            | of physical and digital
+            br 
+            a( data-up, href='/' ) The Workers went
+                br 
+                | up
+        script( src='https://code.jquery.com/jquery-2.2.0.min.js' )
+        script( src='homepage.js' )
+        //- Statcouter
+        script(type='text/javascript').
+            var sc_project=6446254;
+            var sc_invisible=1;
+            var sc_security="f3419008";
+        script(type='text/javascript', src='http://www.statcounter.com/counter/counter.js')
+        noscript
+            .statcounter
+                 img.statcounter(src='http://c.statcounter.com/6446254/0/f3419008/1/', alt='statistics for vBulletin')
     
-        
-        
