@@ -2,13 +2,14 @@ doctype html
 html
     head
         title The Workers
-        link( rel='stylesheet', type='text/css', href='http://fast.fonts.net/cssapi/8e109d65-ebeb-46d7-b7d8-27241cef6e00.css' )
+        script( type="text/javascript", src="http://fast.fonts.net/jsapi/8e109d65-ebeb-46d7-b7d8-27241cef6e00.js" )
         link( rel='stylesheet', type='text/css', href='homepage.css' )
         
         meta(http-equiv='imagetoolbar', content='no')
         meta(name='description', content='Seriously playful, sometimes digital, design studio.')
         meta(name='keywords', content='design, web, iOS, product, studio, RCA, royal college of art, art, designers, the best, better the the rest, gods, advertising, publishing, ebooks, iphone, ipad, mobile, graphic design')
         meta(name='author', content='Ross Cairns')
+        meta( name="viewport", content="width=device-width, initial-scale=1" )
    
     //- Piwik
     script(type='text/javascript').
@@ -30,19 +31,19 @@ html
         h1 The 
             br 
             | Workers
-        h2 Seriously 
+        h2 Seriously
             br.show-on.wide-block.fat-block 
-            |  Playful,  
-            br 
-            | Sometimes  
-            br.show-on.wide-block.fat-block  
-            | Digital,  
+            |  Playful  
+            //- br 
+            //- | Sometimes  
+            //-br.show-on.wide-block.fat-block  
+            //- | Digital,  
             br
             | Design  
             br.show-on.wide-block.fat-block  
             | Studio
         ul.projects
-            li: a( href='http://www.afterdark.io/' ) Afterdark
+            li: a( href='http://www.afterdark.io/' ) After Dark
             li: a( href='http://where-you-are.com/' ) Where-you-are
             li: a( href='https://vimeo.com/137878124' ) HTC Straylight
             li: a( href='https://vimeo.com/136113812' ) Bloomberg Connects
@@ -63,26 +64,32 @@ html
                     | Swanfield Street
                     br
                     | London E2 7LF
-                    br 
+                    br
+                    | &rarr; 
                     a( href='https://www.google.co.uk/maps/dir/\'\'/the+workers+london/data=!4m5!4m4!1m0!1m2!1m1!1s0x48761cb9c760956d:0x93f6beba60529f84?sa=X&ved=0ahUKEwi0goHs1rHKAhUBNhQKHZvdC6EQ9RcIdjAL' ) Map
             .column.column-b 
                 h3 Contact
-                p: a( href='mailto:io@theworkers.net' ) io@theworkers.net
+                p 
+                    a( href='tel:+4420 3808 0089' ) +44(0)20 3808 0089
+                    br 
+                    a( href='mailto:io@theworkers.net' ) io@theworkers.net
                 h3 Twitter
                 p: a( href='http://twitter.com/theworkers' ) @theworkers
                 h3 Company No.
                 p 7512173
             .column.column-c
-                h3: a.ross( href='http://rosscairns.com' ) Ross Cairns
-                p 
+                h3 Ross Cairns
+                p   
                     a.ross( href='mailto:r@theworkers.net' ) r@theworkers.net
-                    br
-                    | +(44) 77 512 44 728
-                h3: a.tommaso( href='http://tommasolanza.com' ) Tommaso Lanza
-                p  
-                    a.tommaso( href='mailto:t@theworkers.net' ) t@theworkers.net
                     br 
-                    | +(44) 77 216 92 021
+                    | &rarr; 
+                    a.ross( href='http://rosscairns.com' ) website
+                h3 Tommaso Lanza  
+                p
+                    a.tommaso( href='mailto:t@theworkers.net' ) t@theworkers.net
+                    br
+                    | &rarr; 
+                    a.tommaso( href='http://tommasolanza.com' ) website
         ul.skills
             li Design,
             li Collaboration,
@@ -101,12 +108,11 @@ html
             li Mobile,
             li App Development,
             li Installations,
-            li Performances,
+            li Live Performance,
             li Speaking,
             li Technology,
             li WebGL,
-            li Three.js,
-            li Games
+            li Three.js
         .logos
             .logo: img( src="logo-blue.png" )
             .logo.show-on.fat-block.wide-block: img( src="logo-green.png" ).above-text
